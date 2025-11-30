@@ -2,12 +2,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RepoDb.SqlServer.BulkOperations.IntegrationTests.Models;
 
-[assembly: DoNotParallelize]
-
 namespace RepoDb.SqlServer.BulkOperations.IntegrationTests;
 
 /// <summary>
-/// A class used as a startup setup for for RepoDb test database.
+/// A class used as a startup setup for RepoDb test database.
 /// </summary>
 public static class Database
 {

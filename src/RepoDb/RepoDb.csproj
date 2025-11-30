@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Title>RepoDB</Title>
-    <TargetFrameworks>net9.0;net8.0;netstandard2.0;net48</TargetFrameworks>
+    <TargetFrameworks>net10.0;net9.0;netstandard2.0</TargetFrameworks>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <Description>A hybrid ORM library for .NET.</Description>
@@ -22,7 +22,6 @@
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' or '$(TargetFramework)' == 'net48'">
     <PackageReference Include="System.ComponentModel.Annotations" />
-    <PackageReference Include="System.Dynamic.Runtime" />
     <PackageReference Include="Microsoft.Bcl.HashCode" />
     <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" />
     <PackageReference Include="System.Memory" />
